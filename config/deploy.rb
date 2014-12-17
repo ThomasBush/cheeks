@@ -6,7 +6,7 @@ set :rails_env, "production" #added for delayed job
 
 set :repo_url, "git@github.com:ThomasBush/cheeks.git"
 set :deploy_via, :remote_cache
-set :deploy_to, '/var/www/cheeks'
+set :deploy_to, '/home/cheeks'
 
 # Default value for :format is :pretty
 set :format, :pretty

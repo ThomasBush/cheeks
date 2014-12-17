@@ -6,3 +6,19 @@ development:
   database: db/development.sqlite3
   pool: 5
   timeout: 5000
+
+test:
+  adapter: sqlite3
+  database: db/test.sqlite3
+  pool: 5
+  timeout: 5000
+
+production:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: cheeks_production
+  pool: 5
+  username: root
+  password: 8C4C6o7FHdk8
+  host: localhost

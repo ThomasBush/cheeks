@@ -91,6 +91,7 @@ GEM
     mime-types (2.4.3)
     minitest (5.4.3)
     multi_json (1.10.1)
+    mysql2 (0.3.17)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (2.9.1)
@@ -171,6 +172,7 @@ DEPENDENCIES
   jbuilder (= 2.2.5)
   jquery-rails (= 3.1.2)
   kaminari (= 0.16.1)
+  mysql2
   rails (= 4.1.8)
   redcarpet (= 3.2.0)
   sass-rails (= 4.0.4)

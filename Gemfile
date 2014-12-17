@@ -41,7 +41,7 @@ group :development do
   gem 'capistrano'
   gem 'capistrano-rails'
   gem 'capistrano-rvm'
-  gem 'capistrano-passenger'
+  # gem 'capistrano-passenger'
 end
 
 # Devise: https://github.com/plataformatec/devise

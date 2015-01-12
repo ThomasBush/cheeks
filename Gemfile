@@ -37,13 +37,10 @@ group :development, :test do
   gem 'sqlite3', '1.3.10'
 end
 
-group :development do
-  gem 'capistrano'
-  gem 'capistrano-rails'
-  gem 'capistrano-rvm'
-  gem 'capistrano-passenger'
-  gem 'capistrano-nginx-unicorn'
-end
+gem 'capistrano'
+gem 'capistrano-bundler'
+gem 'capistrano-rails'
+gem 'capistrano-rvm', github: "capistrano/rvm"
 
 # Devise: https://github.com/plataformatec/devise
 gem 'devise', '3.4.1'

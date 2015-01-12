@@ -20,5 +20,5 @@ production:
   database: cheeks_production
   pool: 5
   username: root
-  password: 8C4C6o7FHdk8
+  password: es2jNV8uUzcLHCm
   host: localhost

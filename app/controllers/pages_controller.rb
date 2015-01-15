@@ -11,7 +11,13 @@ class PagesController < ApplicationController
   def inside
   end
 
+  def about
+  end
+
   def wedding
+  end
+
+  def travel
   end
 
   def activities

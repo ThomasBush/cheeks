@@ -8,6 +8,8 @@ Cheeks::Application.routes.draw do
   post "/emailconfirmation", to: "pages#email", as: "email_confirmation"
 
   get "wedding", to: "pages#wedding", as: "wedding"
+  get "travel", to: "pages#travel", as: "travel"
+  get "about", to: "pages#about", as: "about"
   get "activities", to: "pages#activities", as: "activities"
 
   get "posts", to: "pages#posts", as: "posts"

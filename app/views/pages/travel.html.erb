@@ -1,42 +1,115 @@
 <h2>Travel</h2>
-<ul>
-  <li><%= link_to "Marta", "http://www.itsmarta.com" %></li>
-  <li><%= link_to "Uber", "https://www.uber.com/invite/uz03p" %></li>
-</ul>
+
+<h3>Marta</h3>
+<p>Atlanta's public transportation.  For those that are flying to town, we recommend taking Marta from the Airport to your hotel.</p>
+
+<p>need directions</p>
+
+<%= link_to "Marta Link", "http://www.itsmarta.com", :class=> "btn btn-navy"  %>
+
+<h3>Uber</h3>
+<p>An app to request, ride to any location, and pay via your mobile phone.  Similar to a taxi, but less expensive and more efficient.  We recommend using Uber when moving throughout the city, even if you driving, you can save yourself the hassels of parking. </p>
+
+<p>need Directions</p>
+
+<%= link_to "Uber Link", "https://www.uber.com/invite/uz03p", :class=> "btn btn-navy" %>
+
 
 <h2>Hotels</h2>
-<ul>
-  <li>
-    <h3>The Ellis Hotel</h3>
-    Price: $115 per night<br>
-    Price with Breakfast: $125 per night<br>
-    Parking: $18 per night<br>
-    Request the Bush / Windnagle group rate<br>
-    Phone: <a href="tel:18772112545">877-211-2545</a><br>
-    <a href="https://bookings.ihotelier.com/The-Ellis-Hotel/bookings.jsp?groupID=1337396&hotelID=14796">Reserve with Group Rate</a><br>
-    <a href="https://www.google.com/maps/dir//The+Ellis+Hotel,+176+Peachtree+Street+Northeast,+Atlanta,+GA+30303/@33.7583218,-84.4248177,13z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x88f50387864fd6c1:0xe354a5a0417a636d!2m2!1d-84.387824!2d33.758256" target="_blank">Directions</a>
-  </li>
 
-  <li>
-    <h3>The Ritz-Carlton, Atlanta (Downtown)</h3>
-    Price: $149 per night<br>
-    Parking: $35 per night (Valet)<br>
-    Request Chelsea Windnagle & Tom Bush Wedding<br>
-    Phone: <a href="tel:18002413333">800-241-3333</a><br>
-    <a href="http://www.ritzcarlton.com/en/Properties/Atlanta/Default.htm">Reserve with Group Rate</a><br>
-      CTBCTBA (king) or CTBCTBB ( 2 queen beds based on availability)<br>
-    Cutoff date is Wednesday, May 6, 2015<br>
-    <a href="https://www.google.com/maps/place/The+Ritz-Carlton,+Atlanta/@33.758554,-84.387102,17z/data=!4m6!1m3!3m2!1s0x88f504ed289e9e9b:0x3c272a773ef7e649!2sThe+Ritz-Carlton,+Atlanta!3m1!1s0x88f504ed289e9e9b:0x3c272a773ef7e649" target="_blank">Directions</a>
-  </li>
+<div class="table-responsive">
+  <h3>The Ellis Hotel</h3>
 
-  <li>
-    <h3>The Marriott</h3>
-    Price: $109 per night<br>
-    Price with Breakfast: $119 per night<br>
-    Parking: $15 per night (Valet)<br>
-    Phone: <a href="tel:14042222416">404-222-2416</a><br>
-    <a href="ttp://www.marriott.com/meeting-event-hotels/group-corporate-travel/groupCorp.mi?resLinkData=WINDNAGLE-BUSH%20WEDDING%20%5EATLDO%60WBWWBWA%7CWBWWBWB%60119.00%60USD%60false%606/5/15%606/7/15%605/15/15&app=resvlink&stop_mobi=yes">Reserve with Group Rate</a><br>
-    Cutoff date is Friday, May 15, 2015<br>
-    <a href="https://www.google.com/maps/dir//133+Carnegie+Way+NW,+Atlanta,+GA+30303/@33.7581549,-84.3904446,17z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x88f503878160efcd:0x673d8883a38df0b8!2m2!1d-84.3881325!2d33.7581505" target="_blank">Directions</a>
-  </li>
-</ul>
+  <table class="table table-bordered table-striped table-rounded">
+    <tr>
+      <td>Group Rate</td>
+      <td>$115 per night / $125 per night with breakfast.  Request the Bush Windnagle group rate.  Cutoff date is Wednesday, May 6, 2015.</td>
+    </tr>
+
+    <tr>
+      <td>Parking</td>
+      <td>$18 per night</td>
+    </tr>
+
+    <tr>
+      <td>Phone</td>
+      <td><a href="tel:18772112545">877-211-2545</a></td>
+    </tr>
+
+    <tr>
+      <td>Make Reservation</td>
+      <td><a href="https://bookings.ihotelier.com/The-Ellis-Hotel/bookings.jsp?groupID=1337396&hotelID=14796" class="btn btn-navy">Reserve with Group Rate</a></td>
+    </tr>
+
+    <tr>
+      <td>Directions</td>
+      <td><a href="https://www.google.com/maps/dir//The+Ellis+Hotel,+176+Peachtree+Street+Northeast,+Atlanta,+GA+30303/@33.7583218,-84.4248177,13z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x88f50387864fd6c1:0xe354a5a0417a636d!2m2!1d-84.387824!2d33.758256" target="_blank" class="btn btn-success"><i class='fa fa-map-marker'></i> Directions</a></td>
+    </tr>
+
+  </table>
+</div>
+
+<div class="table-responsive">
+  <h3>The Ritz-Carlton, Atlanta (Downtown)</h3>
+
+  <table class="table table-bordered table-striped table-rounded">
+    <tr>
+      <td>Group Rate</td>
+      <td>$149 per night.  Request Chelsea Windnagle and Tom Bush Wedding. Cutoff date is Wednesday, May 6, 2015</td>
+    </tr>
+
+    <tr>
+      <td>Parking</td>
+      <td>$35 per night (Valet)</td>
+    </tr>
+
+    <tr>
+      <td>Phone</td>
+      <td><a href="tel:18772112545">877-211-2545</a></td>
+    </tr>
+
+    <tr>
+      <td>Make Reservation</td>
+      <td><a href="http://www.ritzcarlton.com/en/Properties/Atlanta/Default.htm" class="btn btn-navy">Reserve with Group Rate</a></td>
+    </tr>
+
+    <tr>
+      <td>Directions</td>
+      <td><a href="https://www.google.com/maps/place/The+Ritz-Carlton,+Atlanta/@33.758554,-84.387102,17z/data=!4m6!1m3!3m2!1s0x88f504ed289e9e9b:0x3c272a773ef7e649!2sThe+Ritz-Carlton,+Atlanta!3m1!1s0x88f504ed289e9e9b:0x3c272a773ef7e649" target="_blank" class="btn btn-success"><i class='fa fa-map-marker'></i> Directions</a></td>
+    </tr>
+
+  </table>
+</div>
+
+
+<div class="table-responsive">
+  <h3>The Marriott</h3>
+
+  <table class="table table-bordered table-striped table-rounded">
+    <tr>
+      <td>Group Rate</td>
+      <td>$109 per night, $119 with breakfast.  Request Windnagle Bush Wedding. Cutoff date is Friday, May 15, 2015</td>
+    </tr>
+
+    <tr>
+      <td>Parking</td>
+      <td>$15 per night (Valet)</td>
+    </tr>
+
+    <tr>
+      <td>Phone</td>
+      <td><a href="tel:14042222416">404-222-2416</a></td>
+    </tr>
+
+    <tr>
+      <td>Make Reservation</td>
+      <td><a href="ttp://www.marriott.com/meeting-event-hotels/group-corporate-travel/groupCorp.mi?resLinkData=WINDNAGLE-BUSH%20WEDDING%20%5EATLDO%60WBWWBWA%7CWBWWBWB%60119.00%60USD%60false%606/5/15%606/7/15%605/15/15&app=resvlink&stop_mobi=yes" class="btn btn-navy">Reserve with Group Rate</a></td>
+    </tr>
+
+    <tr>
+      <td>Directions</td>
+      <td><a href="https://www.google.com/maps/dir//133+Carnegie+Way+NW,+Atlanta,+GA+30303/@33.7581549,-84.3904446,17z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x88f503878160efcd:0x673d8883a38df0b8!2m2!1d-84.3881325!2d33.7581505" target="_blank" class="btn btn-success"> <i class='fa fa-map-marker'></i> Directions</a></td>
+    </tr>
+
+  </table>
+</div>

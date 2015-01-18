@@ -10,91 +10,77 @@
 </head>
 <!-- NAVBAR
 ================================================== -->
-  <body>
-    <div class="navbar-wrapper">
-      <div class="container">
+  <body id="home">
+    <div id="wrap">
+      <div class="navbar-wrapper">
+        <div class="container">
 
-        <%= render 'layouts/navigation' %>
+          <%= render 'layouts/navigation' %>
 
-      </div>
-    </div>
-
-
-    <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide  carousel-fade" data-ride="carousel">
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-
-          <%= image_tag("cheeks-bg.jpg") %>
-
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Our Story.</h1>
-              <p>He asked and she said yes.  Find out how it all came to be.</p>
-              <p>
-                <%= link_to "About Us", about_path, :class => "btn btn-lg btn-primary" %>
-              </p>
-            </div>
-          </div>
         </div>
       </div>
-    </div><!-- /.carousel -->
 
 
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
+      <!-- Carousel
+      ================================================== -->
+      <div id="header-content">
 
-    <div class="container marketing">
-      <div class="row">
+        <div class="container">
+          <div id="header-text">
+            <h1>Our Story.</h1>
+            <p>He asked and she said yes.  Find out how it all came to be.</p>
+            <%= link_to "About Us", about_path, :class => "btn btn-lg btn-navy" %>
+          </div>
+        </div>
 
-        <div class="col-lg-4">
-
-          <%= image_tag("meeting.jpg", :class=>"img-circle feature-image") %>
-
-          <h2>The Big Event</h2>
-          <p>
-            Eat, drink, and be merry.  <br/>Get ready for a good time!
-          </p>
-          <p>
-            <%= link_to "Wedding Details", wedding_path, :class => "btn btn-default btn-sm" %>
-          </p>
-        </div><!-- /.col-lg-4 -->
-
-        <div class="col-lg-4">
-          <%= image_tag("engagement.jpg", :class=>"img-circle feature-image") %>
-
-          <h2>Travel Guests</h2>
-          <p>All you need to know about getting to the party!</p>
-          <p>
-            <%= link_to "Travel Info", travel_path, :class => "btn btn-default btn-sm" %>
-          </p>
-        </div><!-- /.col-lg-4 -->
-
-        <div class="col-lg-4">
-          <%= image_tag("activity.jpg", :class=>"img-circle feature-image") %>
-
-          <h2>Atlanta Activites</h2>
-          <p>We can't wait to share our city with you.</p>
-          <p>
-            <%= link_to "List of Activities", activities_path, :class => "btn btn-default btn-sm" %>
-          </p>
-        </div><!-- /.col-lg-4 -->
-      </div>
-
-      <hr class="featurette-divider">
-
-      <!-- /END THE FEATURETTES -->
+      </div><!-- /.carousel -->
 
 
-      <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>© 2014 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
-      </footer>
+      <!-- Marketing messaging and featurettes
+      ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
 
-    </div><!-- /.container -->
+      <div class="container marketing">
+        <div class="row">
+
+          <div class="col-lg-4">
+
+            <%= image_tag("meeting.jpg", :class=>"img-circle feature-image") %>
+
+            <h2>The Big Event</h2>
+            <p>
+              Eat, drink, and be merry.  <br/>Get ready for a good time!
+            </p>
+            <p>
+              <%= link_to "Wedding Details", wedding_path, :class => "btn btn-navy btn-sm" %>
+            </p>
+          </div><!-- /.col-lg-4 -->
+
+          <div class="col-lg-4">
+            <%= image_tag("engagement.jpg", :class=>"img-circle feature-image") %>
+
+            <h2>Travel Guests</h2>
+            <p>All you need to know about getting to the party!</p>
+            <p>
+              <%= link_to "Travel Info", travel_path, :class => "btn btn-navy btn-sm" %>
+            </p>
+          </div><!-- /.col-lg-4 -->
+
+          <div class="col-lg-4">
+            <%= image_tag("activity.jpg", :class=>"img-circle feature-image") %>
+
+            <h2>Atlanta Activites</h2>
+            <p>We can't wait to share our city with you.</p>
+            <p>
+              <%= link_to "List of Activities", activities_path, :class => "btn btn-navy btn-sm" %>
+            </p>
+          </div><!-- /.col-lg-4 -->
+        </div>
+
+      </div><!-- /.container -->
+    </div><!-- / wrap -->
+
+    <%= render 'layouts/footer' %>
 
 </body>
 </html>

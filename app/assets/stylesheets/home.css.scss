@@ -46,6 +46,11 @@ body {
   z-index: 20;
 }
 
+.navbar-inverse {
+  background-color: #26487F !important;
+  border-color: #00154C;
+}
+
 /* Flip around the padding for proper display in narrow viewports */
 .navbar-wrapper > .container {
   padding-right: 0;
@@ -59,7 +64,23 @@ body {
   width: auto;
 }
 
+/* Button color
+-------------------------------------------------- */
+.btn-navy {
+  background-color: #26487F !important;
+  border-color: #00154C;
+  color: #FFFFFF !important;
+}
 
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus,
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  background-color: #00154C !important;
+}
+.btn-success {
+  color: #FFFFFF !important;
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -114,12 +135,46 @@ body {
 }
 
 
+#header-content {
+  margin: 0 auto 20px auto;
+  background-image: url('/assets/cheeks-bg.jpg');
+  background-size: cover;
+  height: 500px;
+}
+#home #header-content {
+  margin: 0 auto 50px auto;
+}
 
+#header-text {
+  width: 400px;
+  margin: 250px auto 0 auto;
+  text-align: center;
+}
+#header-text h1,
+#header-text p {
+  background: rgba(38,72,127,.4);
+  display: inline-block;
+  padding: 5px;
+  color: #FFFFFF;
+}
 .feature-image {
   height: 240px;
   width: 240px;
-
 }
+
+.container.marketing {
+  margin-bottom: 20px;
+}
+#home .container.marketing {
+  margin-bottom: 0px;
+}
+
+#footer {
+  background-color: #26487F !important;
+}
+
+
+
 /* Featurettes
 ------------------------- */
 

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en"><head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title><%= @title || "Cheeks" %></title>
   <%= favicon_link_tag 'favicon.ico' %>
@@ -9,30 +8,36 @@
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-  <div id="wrap">
-    <header>
-      <%= render 'layouts/navigation' %>
-    </header>
-      
-    <div class="container">
-       
-      <div class="row">
-        <div class="col-sm-6 col-sm-offset-3 text-center">
-          <%= render 'layouts/messages' %>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div id="wrap">
+      <div class="navbar-wrapper">
+        <div class="container">
+          <%= render 'layouts/navigation' %>
         </div>
       </div>
-      
-      <div class="row">
-        <div class="col-sm-12">
-          <%= yield %>
-        </div>     
-      </div>  
-      
-    </div>
-  </div>
-    
-  <%= render 'layouts/footer' %>    
+
+      <!-- header
+      ================================================== -->
+      <div id="header-content">
+
+      </div><!-- / header -->
+
+      <!-- Marketing messaging and featurettes
+      ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+
+      <div class="container marketing">
+        <div class="row">
+          <div class="col-sm-12">
+            <%= yield %>
+          </div>
+        </div>
+
+      </div><!-- /.container -->
+    </div><!-- / wrap -->
+    <%= render 'layouts/footer' %>
 
 </body>
 </html>

@@ -137,7 +137,8 @@ body {
 
 #header-content {
   margin: 0 auto 20px auto;
-  background-image: url('cheeks-bg.jpg');
+  background: url('cheeks-bg.jpg') top center no-repeat #FFFFFF;
+
   background-size: cover;
   height: 500px;
 }

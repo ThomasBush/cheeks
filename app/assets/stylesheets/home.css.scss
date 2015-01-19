@@ -137,8 +137,7 @@ body {
 
 #header-content {
   margin: 0 auto 20px auto;
-  background: asset-url('cheeks-bg.jpg') top center no-repeat #FFFFFF;
-
+  background: asset-url('cheeks-bg.jpg') top left no-repeat #FFFFFF;
   background-size: cover;
   height: 500px;
 }
@@ -147,10 +146,14 @@ body {
 }
 
 #header-text {
-  width: 400px;
+  width: 90%;
   margin: 250px auto 0 auto;
   text-align: center;
 }
+.header-text-inner {
+  width: 100%;
+}
+
 #header-text h1,
 #header-text p {
   background: rgba(38,72,127,.4);
@@ -174,6 +177,10 @@ body {
   background-color: #26487F !important;
 }
 
+.about #header-content {
+  background: asset-url('about-bg.jpg') top center no-repeat #FFFFFF;
+  background-size: cover;
+}
 
 
 /* Featurettes
@@ -223,6 +230,12 @@ body {
   .featurette-heading {
     font-size: 50px;
   }
+
+  #header-text {
+    width: 400px;
+  }
+
+
 }
 
 @media (min-width: 992px) {

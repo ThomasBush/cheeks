@@ -19,13 +19,13 @@ pre {
 }
 
 a {
-  color: #000;
+  color: #26487F;
+  text-decoration: underline;
   &:visited {
-    color: #666;
+    color: darken(#26487F, 15%);
   }
   &:hover {
-    color: #fff;
-    background-color: #000;
+    color: darken(#26487F, 15%);
   }
 }
 
@@ -66,4 +66,13 @@ div {
     font-size: 12px;
     list-style: square;
   }
+}
+
+.navbar-nav > li > a {
+  height: 50px;
+  text-decoration: none;
+}
+
+a.btn, .navbar-brand {
+  text-decoration: none;
 }
